@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Formato/estilos/estilos.css">
+    <title>Formato</title>
+</head>
+<body>
+    <header id="header">
+        <div id="titulo">
+            <h2>Formato</h2>
+        </div>
+    </header>
+    <form action="funciones/llenado.php" method="post" id="form-one" enctype="multipart/form-data">
+        <div id="primer-container" class="container">
+            <div id="primera-fila-div" class="fila">
+                <div id="primera-form-div">
+                    <label id="name-label" for="name">Nombres</label>
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Introduzca su nombre" required="">
+                </div>
+                <div id="primera-form-div">
+                    <label id="apellido-label" for="apellido">Apellidos</label>
+                    <input id="apellido" class="form-control" type="text" name="apellido" placeholder="Introduzca su apellido" required="">
+                </div>
+                <div id="primera-form-div">
+                    <label id="especialidad-label" for="especialidad">Especialidad</label>
+                    <select name="especialidad" id="dropdown" class="form-control">
+                        <option value="" disabled="" selected="">Seleccione su especialidad</option>
+                        <option value="Ingeniero">Ingeniero</option>
+                        <option value="Biólogo">Biólogo</option>
+                        <option value="Médico">Médico</option>
+                        <option value="Profesor">Profesor</option>
+                        <option value="Abogado">Abogado</option>
+                    </select>
+                </div>
+            </div>
+            <div id="segunda-fila-div" class="fila">
+                <div id="segunda-form-div">
+                    <label id="anio-ingreso-label" for="anio_ingreso">Año de Ingreso</label>
+                    <input type="date" name="anio_ingreso" id="anio-ingreso" class="form-control" required="">
+                </div>
+                <div id="segunda-form-div">
+                    <label id="anio-egreso-label" for="anio_egreso">Año de Egreso</label>
+                    <input type="date" name="anio_egreso" id="anio-egreso" class="form-control" required="">
+                </div>
+                <div id="segunda-form-div">
+                    <label id="fecha-nacimiento-label" for="fecha_nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" name="fecha_nacimiento" id="fecha-nacimiento" class="form-control" required="">
+                </div>
+            </div>
+            <div id="tercera-fila-div" class="fila">
+                <div id="tercera-form-div">
+                    <label id="estado-civil-label" for="estado_civil">Estado Civil</label>
+                    <input type="text" name="estado_civil" id="estado-civil" class="form-control" placeholder="Introduzca su Estado Civil" required="">
+                </div>
+                <div id="tercera-form-div">
+                    <label id="dni-label" for="dni">D.N.I</label>
+                    <input type="text" name="dni" id="dni" class="form-control" placeholder="Introduzca su DNI" required="">
+                </div>
+                <div id="tercera-form-div">
+                    <label id="correo-label" for="correo">Correo Electrónico</label>
+                    <input type="text" name="correo" id="correo" class="form-control" placeholder="Introduzca su Correo Electrónico">
+                </div>
+            </div>
+            <div id="cuarta-fila-div" class="fila">
+                <div id="cuarta-form-div">
+                    <label id="direccion-label" for="direccion">Dirección</label>
+                    <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Introduzca su Dirección" required="">
+                </div>
+                <div id="cuarta-form-div">
+                    <label id="distrito-label" for="distrito">Distrito</label>
+                    <input type="text" name="distrito" id="distrito" class="form-control" placeholder="Introduzca su Distrito" required="">
+                </div>
+                <div id="cuarta-form-div">
+                    <label id="telefono-casa-label" for="telefono_casa">Teléfono de Casa</label>
+                    <input type="text" name="telefono_casa" id="telefono-casa" class="form-control" placeholder="Introduzca su número de Teléfono de su Casa">
+                </div>
+            </div>
+            <div id="quinta-fila-div" class="fila">
+                <div id="quinta-form-div">
+                    <label id="telefono-celular-label" for="telefono_celular">Celular</label>
+                    <input type="text" name="telefono_celular" id="telefono-celular" class="form-control" placeholder="Introduzca su número de Celular" required="">
+                </div>
+            </div>
+            <div id="sexta-fila-div" class="fila">
+                <div id="sexta-form-div">
+                    <label id="imagen-label" for="imagen">Subir Imagen</label>
+                    <input type="file" name="imagen" id="imagen" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div id="segundo-container" class="container">
+            <div id="container">
+                <div id="primer-widget" class="widget">
+                    <h3>Padre</h3>
+                    <div id="primer-widget-form-div">
+                        <label id="nombre-padre-label" for="nombre-padre">Nombres</label>
+                        <input type="text" name="nombre-padre" id="nombre-padre" class="form-control" placeholder="Introduzca los Nombres de su Padre">
+                    </div>
+                    <div id="primer-widget-form-div">
+                        <label id="apellido-padre-label" for="apellido-padre">Apellidos</label>
+                        <input type="text" name="apellido-padre" id="apellido-padre" class="form-control" placeholder="Introduzca los Apellidos de su Padre">
+                    </div>
+                    <div id="primer-widget-form-div">
+                        <label id="ocupacion-padre-label" for="ocupacion-padre">Ocupacion</label>
+                        <input type="text" name="ocupacion-padre" id="ocupacion-padre" class="form-control" placeholder="Introduzca la ocupación de su Padre">
+                    </div>
+                </div>
+                <div id="segundo-widget" class="widget">
+                    <h3>Madre</h3>
+                    <div id="segundo-widget-form-div">
+                        <label id="nombre-madre-label" for="nombre-madre">Nombres</label>
+                        <input type="text" name="nombre-madre" id="nombre-madre" class="form-control" placeholder="Introduzca los Nombres de su Madre">
+                    </div>
+                    <div id="segundo-widget-form-div">
+                        <label id="apellido-madre-label" for="apellido-madre">Apellidos</label>
+                        <input type="text" name="apellido-madre" id="apellido-madre" class="form-control" placeholder="Introduzca los Apellidos de su Madre">
+                    </div>
+                    <div id="segundo-widget-form-div">
+                        <label id="ocupacion-madre-label" for="ocupacion-madre">Ocupacion</label>
+                        <input type="text" name="ocupacion-madre" id="ocupacion-madre" class="form-control" placeholder="Introduzca la ocupación de su Madre">
+                    </div>
+                </div>
+                <div id="tercer-widget" class="widget">
+                    <h3>Esposo/a</h3>
+                    <div id="tercer-widget-form-div">
+                        <label id="nombre-esposoa-label" for="nombre-esposoa">Nombres</label>
+                        <input type="text" name="nombre-esposoa" id="nombre-esposoa" class="form-control" placeholder="Introduzca los Nombres de su Madre">
+                    </div>
+                    <div id="tercer-widget-form-div">
+                        <label id="apellido-esposoa-label" for="apellido-esposoa">Apellidos</label>
+                        <input type="text" name="apellido-madre" id="apellido-madre" class="form-control" placeholder="Introduzca los Apellidos de su Madre">
+                    </div>
+                    <div id="tercer-widget-form-div">
+                        <label id="ocupacion-esposoa-label" for="ocupacion-esposoa">Ocupacion</label>
+                        <input type="text" name="ocupacion-esposoa" id="ocupacion-esposoa" class="form-control" placeholder="Introduzca la ocupación de su Madre">
+                    </div>
+                    <div id="tercer-widget-form-div">
+                        <label id="telefono-casa-esposoa" for="telefono-casa-esposoa">Telefono de Casa</label>
+                        <input type="text" name="teleono-casa-esposoa" id="telefono-casa-esposoa" class="form-control" placeholder="Introduzca el número de Teléfono de Casa del Esposo/a">
+                    </div>
+                    <div id="tercer-widget-form-div">
+                        <label id="celular-esposoa" for="celular-esposoa">Celular</label>
+                        <input type="text" name="celular-esposoa" id="celular-esposoa" class="form-control" placeholder="Introduzca el número de Celular de su Esposo/a">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button name="enviar" id="enviar" class="btn">ENVIAR</button>
+        </div>
+    </form>
+</body>
+</html>

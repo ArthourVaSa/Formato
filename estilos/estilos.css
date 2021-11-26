@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+header{
+    background-color: royalblue;
+    height: 4em;
+}
+
+header h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    color: white;
+}
+
+.fila{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+label, input{
+    display: block;
+}
+
+input{
+    width: 150px;
+}
+
+select{
+    width: 160px;
+}
+
+#sexta-fila-div{
+    display: grid;
+}
+
+label{
+    height: 30px;
+    text-align: start;
+    font-weight: 500;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    margin: 15px 10px 0 10px;
+}
+
+.widget{
+    margin: 20px 50px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 3px black;
+}
+
+#primera-form-div, #segunda-form-div, #tercera-form-div, #cuarta-form-div, #quinta-form-div{
+    padding: 10px;
+    margin: 10px 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+
+#sexta-form-div{
+    justify-content: center;
+    width: 300px;
+    padding: 10px;
+    margin: 10px 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+
+#sexta-form-div input{
+    width: 100%;
+}
+
+#primer-widget-form-div, #segundo-widget-form-div{
+    margin: 10px 10px;
+}
+
+#tercer-widget-form-div{
+    margin: 10px 10px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+h3{
+    font-weight: bold;
+}
